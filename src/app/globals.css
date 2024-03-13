@@ -15,12 +15,14 @@
 
 body {
   background: var(--base);
+  scroll-behavior: smooth;
 }
 
-* {
+html {
   color: var(--accent-text);
   font-family: var(--text);
 }
+
 h1,
 h2,
 h3,

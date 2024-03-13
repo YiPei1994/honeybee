@@ -1,8 +1,13 @@
+import Header from "@/components/header/Header";
+
 export default function Home() {
   return (
-    <main>
-      <h1>headers</h1>
-      <p>paragrapth</p>
-    </main>
+    <>
+      <header className="max-w-screen-xl m-auto">
+        <Header />
+      </header>
+      <main></main>
+      <footer></footer>
+    </>
   );
 }
