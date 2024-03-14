@@ -16,7 +16,7 @@ function Header() {
 
   function changeNavbar() {
     setScrollY(window.scrollY);
-    if (scrollY > 50) {
+    if (scrollY > 150) {
       showDisplayHeader();
     } else {
       hideDisplayHeader();
@@ -35,8 +35,10 @@ function Header() {
   console.log(scrollY, displayHeader);
   return (
     <div
-      className={`p-4 border-b border-accent/50 md:border-none flex items-center justify-center  transition-all duration-300  top-0 z-30 w-full ${
-        displayHeader ? "fixed bg-slate-50" : "relative bg-transparent"
+      className={`p-4 border-b border-accent/50 md:border-none flex items-center justify-center left-0  transition-all duration-300  top-0 z-30 w-full ${
+        displayHeader
+          ? "fixed bg-slate-50  w-full"
+          : "relative bg-transparent  "
       }`}
     >
       <div className="max-w-screen-lg flex items-center flex-wrap md:flex-nowrap justify-between w-full">

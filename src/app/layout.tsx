@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-active overflow-x-hidden"
+      className="scrollbar-thin  scrollbar-track-transparent scrollbar-thumb-active"
     >
-      <body className=" min-h-screen">{children}</body>
+      <body className=" min-h-screen ">{children}</body>
     </html>
   );
 }

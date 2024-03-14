@@ -9,9 +9,9 @@ function Hero() {
     <>
       <div
         style={{ backgroundImage: `url(${bgImage})` }}
-        className="bg-cover flex bg-center bg-no-repeat w-full h-screen absolute left-0 top-0 z-0"
+        className="bg-cover flex bg-center bg-no-repeat w-full min-h-[35vh] lg:h-[67vh] xl:h-screen absolute left-0 top-0 z-0"
       ></div>
-      <Section className="z-10  relative xl:h-[90vh] w-full justify-between  m-4 lg:m-12 xl:mx-auto">
+      <Section className="  relative xl:h-[90vh] w-full justify-between  m-4 lg:m-12 xl:mx-auto">
         <div className="w-3/5 flex gap-2 flex-col max-w-[370px] ">
           <p className="text-md md:text-lg lg:text-xl uppercase">
             fresh & sweet as honey
@@ -29,6 +29,7 @@ function Hero() {
           <Image
             width={500}
             height={500}
+            priority
             src="/honey_hero.png"
             alt="hero honey"
           />
