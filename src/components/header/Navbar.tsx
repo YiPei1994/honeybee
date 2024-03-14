@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import React from "react";
-import { useDisplayNavbar } from "../../../store/useDisplayNavbar";
+import { useDisplayNavbar } from "../../../store/navbarStore";
 
 function Navbar() {
   const { displayNavbar, toggleDisplayNavbar } = useDisplayNavbar();
+
   return (
     <>
       <nav
@@ -13,7 +14,7 @@ function Navbar() {
           displayNavbar
             ? "max-h-[350px] pointer-events-auto opacity-100"
             : "max-h-0 pointer-events-none opacity-0"
-        } transition-all duration-300 md:hidden w-full`}
+        } transition-all duration-300 md:hidden w-full `}
       >
         <ul className="flex flex-col gap-2 justify-center items-center pt-6 pb-4">
           <li
@@ -50,7 +51,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <nav className="hidden md:block">
+      <nav className="hidden md:block md:mr-4">
         <ul className="flex flex-row gap-4 justify-center items-center ">
           <li onClick={() => toggleDisplayNavbar()}>
             <Link

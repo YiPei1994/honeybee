@@ -13,7 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-active overflow-x-hidden"
+    >
       <body className=" min-h-screen">{children}</body>
     </html>
   );
