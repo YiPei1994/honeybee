@@ -5,7 +5,10 @@ import Hero from "@/components/hero/Hero";
 export default function Home() {
   return (
     <>
-      <Header />
+      <header className="relative w-full h-auto">
+        <Header />
+      </header>
+
       <main className="relative">
         <Hero />
         <About />

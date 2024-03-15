@@ -38,3 +38,88 @@ h4 {
     text-wrap: balance;
   }
 }
+
+h1 {
+  font-size: 36px;
+  max-width: 90%;
+}
+h2 {
+  font-size: 24px;
+  max-width: 90%;
+}
+h4 {
+  font: size 20px;
+  max-width: 90%;
+}
+p,
+span,
+a,
+button,
+input,
+select,
+textarea {
+  font-size: 12px;
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font: size 24px;
+  }
+  p,
+  span,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h4 {
+    font: size 30px;
+  }
+  p,
+  span,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1536px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h4 {
+    font: size 36px;
+  }
+  p,
+  span,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}

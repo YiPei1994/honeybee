@@ -1,47 +1,22 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Logo from "./Logo";
 import { FaBars } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
-import { useDisplayHeader, useDisplayNavbar } from "../../../store/navbarStore";
+import { useDisplayNavbar } from "../../../store/navbarStore";
 import Navbar from "./Navbar";
-import Section from "../ui/Section";
+import { FloatingNav } from "../ui/FloatingNavbar";
+import { navItems } from "../../../utils/constants";
 
 function Header() {
-  const [scrollY, setScrollY] = useState(0);
   const { displayNavbar, toggleDisplayNavbar } = useDisplayNavbar();
-  const { displayHeader, showDisplayHeader, hideDisplayHeader } =
-    useDisplayHeader();
 
-  function changeNavbar() {
-    setScrollY(window.scrollY);
-    if (scrollY > 150) {
-      showDisplayHeader();
-    } else {
-      hideDisplayHeader();
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNavbar);
-
-    // cleanup function
-    return () => {
-      window.removeEventListener("scroll", changeNavbar);
-    };
-  }, [scrollY]);
-
-  console.log(scrollY, displayHeader);
   return (
     <div
-      className={`p-4 border-b border-accent/50 md:border-none flex items-center justify-center left-0  transition-all duration-300  top-0 z-30 w-full ${
-        displayHeader
-          ? "fixed bg-slate-50  w-full"
-          : "relative bg-transparent  "
-      }`}
+      className={`p-4 md:p-6 xl:px-8 border-b border-accent/50  top-0 md:border-none flex items-center justify-center left-0  transition-all duration-300  z-30 w-full }`}
     >
-      <div className="max-w-screen-lg flex items-center flex-wrap md:flex-nowrap justify-between w-full">
+      <div className="max-w-screen-xl flex items-center flex-wrap md:flex-nowrap justify-between w-full">
         <div className="flex justify-between items-center w-full ">
           <Logo />
           <button className="md:hidden" onClick={() => toggleDisplayNavbar()}>
@@ -49,6 +24,7 @@ function Header() {
           </button>
         </div>
         <Navbar />
+        <FloatingNav navItems={navItems} />
       </div>
     </div>
   );

@@ -18,13 +18,13 @@ function ImageSlider() {
   }, [activeSlide]);
 
   return (
-    <div className="relative w-full md:w-1/2 h-[240px] md:h-[280px] lg:h-[320px] xl:w-full">
+    <div className="relative w-full md:w-1/2 h-[280px] lg:h-[320px] xl:w-full flex items-center justify-center">
       {aboutImages.map((image) => (
-        <p
+        <div
           key={image.id}
           className={`${
             activeSlide === image.id ? " opacity-100" : " opacity-0"
-          } absolute left-0 top-0 transition-all duration-300 ease-out`}
+          } absolute left-0 top-[50%] -translate-y-[50%] transition-all duration-300 ease-out`}
         >
           <Image
             width={500}
@@ -32,7 +32,7 @@ function ImageSlider() {
             src={image.imageUrl}
             alt={image.alt}
           />
-        </p>
+        </div>
       ))}
     </div>
   );

@@ -48,3 +48,22 @@ export const newsArray = [
       "Inspired by the importance of pollinators, community gardeners implement bee-friendly practices such as planting native flowers and providing water sources, creating welcoming environments for bees to thrive and support local ecosystems.",
   },
 ];
+
+export const navItems = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Products",
+    link: "/products",
+  },
+  {
+    name: "Blogs",
+    link: "/blog",
+  },
+];
