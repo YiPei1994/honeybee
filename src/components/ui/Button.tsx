@@ -11,7 +11,7 @@ function Button(props: ButtonProps) {
   return (
     <button
       className={cn(
-        "w-fit px-4 py-2 bg-primary text-colorBase text-sm hover:bg-active uppercase",
+        "w-fit px-4 py-2 bg-primary text-colorBase text-sm hover:bg-active uppercase mt-4 rounded-lg",
         className
       )}
       {...rest}

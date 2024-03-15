@@ -16,7 +16,7 @@ function AboutNews() {
       </h2>
       <motion.div
         className="absolute right-5"
-        initial={{ y: 10, opacity: 0 }}
+        initial={{ y: 10, opacity: 1 }}
         animate={{ y: 60, opacity: 1 }}
         transition={{
           repeat: Infinity,

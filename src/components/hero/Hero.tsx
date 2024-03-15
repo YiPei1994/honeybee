@@ -2,17 +2,17 @@ import React from "react";
 import Section from "../ui/Section";
 import Image from "next/image";
 import Button from "../ui/Button";
+import BackgroundWrapper from "../ui/BackgroundWrapper";
 
 function Hero() {
   const bgImage = "hero_bg.png";
   return (
-    <>
-      <div
-        style={{ backgroundImage: `url(${bgImage})` }}
-        className="bg-cover flex bg-center bg-no-repeat w-full min-h-[35vh] lg:h-[67vh] xl:h-screen absolute left-0 top-0 z-0"
-      ></div>
-      <Section className="  relative xl:h-[90vh] w-full justify-between lg:m-12 xl:mx-auto">
-        <div className="w-3/5 flex gap-2 flex-col max-w-[370px] xl:max-w-[550px] ">
+    <BackgroundWrapper
+      className="min-h-[50vh] md:min-h-[50vh]"
+      bgImage={bgImage}
+    >
+      <Section className=" relative xl:h-screen w-full justify-between  xl:mx-auto bg-cover">
+        <div className="w-3/5 flex gap-2 flex-col max-w-[370px] xl:max-w-[550px]  ">
           <p className="text-md md:text-lg lg:text-xl uppercase">
             fresh & sweet as honey
           </p>
@@ -33,7 +33,7 @@ function Hero() {
           />
         </div>
       </Section>
-    </>
+    </BackgroundWrapper>
   );
 }
 

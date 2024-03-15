@@ -12,7 +12,7 @@ function Section({ children, className, style }: SectionProps) {
     <div
       style={style}
       className={cn(
-        "flex items-center w-full max-w-screen-xl mx-auto px-4 md:px-6 xl:px-8 my-4 lg:my-8 z-10",
+        "flex items-center w-full max-w-screen-xl mx-auto px-4 md:px-6 xl:px-8 z-10",
         className
       )}
     >

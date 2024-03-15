@@ -67,3 +67,57 @@ export const navItems = [
     link: "/blog",
   },
 ];
+
+export const products = [
+  {
+    id: 1,
+    imageUrl: "/productOne.png",
+    alt: "heather honey",
+    name: "heather honey",
+    price: 400,
+    description:
+      "Heather honey, prized for its rich flavor derived from the nectar of heather flowers, offers a unique blend of floral sweetness and earthy undertones, making it a beloved culinary ingredient and medicinal gem.",
+  },
+  {
+    id: 2,
+    imageUrl: "/productTwo.png",
+    alt: "Jarrah honey",
+    name: "Jarrah honey",
+    price: 500,
+    description:
+      "Jorrah honey, renowned for its exquisite flavor from the blossoms of the jorrah plant, presents a delicate balance of sweetness and floral notes, cherished both for its culinary versatility and potential health benefits.",
+  },
+  {
+    id: 3,
+    imageUrl: "/productThree.png",
+    alt: "Linden honey",
+    name: "Linden honey",
+    price: 700,
+    description:
+      "Linden honey, extracted from the fragrant blossoms of the linden tree, offers a delightful combination of mild floral taste and subtle hints of mint, making it a favored choice for culinary creations and a reputed remedy in traditional medicine.",
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    imageUrl: "/clientGranny.jpg",
+    comment:
+      "Oh, dear! This honey reminds me of the ones from my childhood. It's pure and delicious, just like how honey should be. My grandkids adore it on their toast, and I love knowing they're enjoying something wholesome.",
+    name: "Evelyn",
+  },
+  {
+    id: 2,
+    imageUrl: "/clientShe.jpg",
+    comment:
+      "This honey is a game-changer! Its smooth texture and rich flavor elevate my morning tea to a whole new level. I love how it adds a natural sweetness without being overly sugary.",
+    name: "Sarah",
+  },
+  {
+    id: 3,
+    imageUrl: "/clientMom.jpg",
+    comment:
+      "We've tried many honeys, but this one is a family favorite! Not only does it taste amazing, but it's also comforting to know it's pure and natural. My little one loves it drizzled over yogurt, and I appreciate its versatility for both sweetening and cooking.",
+    name: "Sophie & Emma",
+  },
+];

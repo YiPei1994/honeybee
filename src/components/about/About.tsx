@@ -6,7 +6,7 @@ import AboutNews from "./AboutNews";
 function About() {
   return (
     <Section className="bg-[#FCFAF9]">
-      <div className="max-w-screen-xl p-4 lg:p-12 flex flex-col xl:flex-row justify-between gap-4 xl:items-stretch">
+      <div className="flex flex-col xl:flex-row justify-between gap-4 xl:items-stretch py-4 md:py-6 lg:py-8">
         <AboutMission />
         <AboutNews />
       </div>

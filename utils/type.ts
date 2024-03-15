@@ -4,3 +4,19 @@ export type News = {
   title: string;
   detail: string;
 };
+
+export type Product = {
+  id: number;
+  imageUrl: string;
+  alt: string;
+  name: string;
+  price: number;
+  description: string;
+};
+
+export type Review = {
+  id: number;
+  imageUrl: string;
+  comment: string;
+  name: string;
+};
