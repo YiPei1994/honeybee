@@ -1,9 +1,9 @@
 import React from "react";
-import { Review } from "../../../utils/type";
+import { ReviewType } from "../../../utils/type";
 import Image from "next/image";
 
 type ReviewProps = {
-  review: Review;
+  review: ReviewType;
   activeSlide: number;
 };
 

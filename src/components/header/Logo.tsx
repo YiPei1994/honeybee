@@ -8,9 +8,9 @@ function Logo() {
       <Link href="/">
         <Image
           width={150}
-          height={150}
+          height={50}
           priority
-          src="honey_logo.svg"
+          src="/logo_bee.png"
           alt="logo"
         />
       </Link>

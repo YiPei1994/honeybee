@@ -1,9 +1,9 @@
 import React from "react";
-import { Honey } from "../../../utils/type";
+import { HoneyType } from "../../../utils/type";
 import Image from "next/image";
 
 type HoneyProps = {
-  honey: Honey;
+  honey: HoneyType;
 };
 
 function Honey({ honey }: HoneyProps) {

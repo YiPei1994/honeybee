@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Logo from "./Logo";
 import { FaBars } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div
-      className={`p-4 md:p-6 xl:px-8 border-b border-accent/50  top-0 md:border-none flex items-center justify-center left-0  transition-all duration-300  z-30 w-full }`}
+      className={`px-4 py-2 md:px-6 xl:px-8 border-b border-accent/50  top-0 md:border-none flex items-center justify-center left-0  transition-all duration-300  z-30 w-full }`}
     >
       <div className="max-w-screen-xl flex items-center flex-wrap md:flex-nowrap justify-between w-full">
         <div className="flex justify-between items-center w-full ">

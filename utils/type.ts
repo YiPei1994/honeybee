@@ -1,11 +1,11 @@
-export type News = {
+export type NewsType = {
   id: number;
   date: string;
   title: string;
   detail: string;
 };
 
-export type Product = {
+export type ProductType = {
   id: number;
   imageUrl: string;
   alt: string;
@@ -14,14 +14,14 @@ export type Product = {
   description: string;
 };
 
-export type Review = {
+export type ReviewType = {
   id: number;
   imageUrl: string;
   comment: string;
   name: string;
 };
 
-export type Honey = {
+export type HoneyType = {
   id: number;
   imageUrl: string;
   alt: string;

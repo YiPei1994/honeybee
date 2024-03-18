@@ -9,14 +9,14 @@ function Footer() {
     <footer className="bg-[#FCFAF9] w-full p-4 flex flex-col gap-4 justify-center items-center">
       <div className="flex gap-2">
         <Link
-          className="text-primary text-4xl"
+          className="text-primary text-4xl hover:text-active"
           href="https://github.com/YiPei1994"
           target="_blank"
         >
           <FaSquareGithub />
         </Link>
         <Link
-          className="text-primary text-4xl"
+          className="text-primary text-4xl hover:text-active"
           href="https://www.linkedin.com/in/yipeizhu/"
           target="_blank"
         >

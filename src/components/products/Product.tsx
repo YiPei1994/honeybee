@@ -1,10 +1,10 @@
 import React from "react";
-import { Product } from "../../../utils/type";
+import { ProductType } from "../../../utils/type";
 import Image from "next/image";
 import Button from "../ui/Button";
 
 type ProductProps = {
-  product: Product;
+  product: ProductType;
   activeSlide: number;
 };
 

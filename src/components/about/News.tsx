@@ -1,8 +1,8 @@
 import React from "react";
-import { News } from "../../../utils/type";
+import { NewsType } from "../../../utils/type";
 
 type NewsProps = {
-  news: News;
+  news: NewsType;
 };
 
 function News({ news }: NewsProps) {
