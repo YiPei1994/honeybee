@@ -12,13 +12,13 @@ function ReviewsSlider() {
         setActiveSlide(0);
       }
       setActiveSlide((prevSlide) => prevSlide + 1);
-    }, 3000);
+    }, 15000);
 
     return () => clearTimeout(timer);
   }, [activeSlide]);
 
   return (
-    <div className="relative w-full h-full lg:w-full xl:w-full flex items-baseline justify-center  my-4">
+    <div className="relative w-full h-full lg:w-4/5 m-auto flex items-center justify-center  my-4">
       {reviews.map((review) => (
         <Review key={review.id} review={review} activeSlide={activeSlide} />
       ))}

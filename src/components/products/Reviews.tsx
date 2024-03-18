@@ -7,7 +7,7 @@ function Reviews() {
   const bgImage = "bgTwo.png";
   return (
     <BackgroundWrapper
-      className="min-h-[80vh] md:min-h-[55vh] lg:min-h-[60vh] xl:min-h-[60vh] md:py-10 "
+      className="min-h-[100vh] md:min-h-[55vh] lg:min-h-[60vh] xl:min-h-[60vh] md:py-10 "
       bgImage={bgImage}
     >
       <Section>

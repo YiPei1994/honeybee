@@ -12,7 +12,7 @@ function Review({ review, activeSlide }: ReviewProps) {
     <div
       className={`${
         activeSlide === review.id ? " opacity-100" : " opacity-0"
-      } absolute left-0  transition-all duration-300 ease-out w-full md:flex-row flex gap-4 flex-col justify-center lg:gap-8 items-center md:justify-start`}
+      } absolute left-0  transition-all duration-300 ease-out w-full md:flex-row flex gap-4 flex-col justify-center lg:gap-8 items-center md:justify-around`}
     >
       <figure className="w-4/5  lg:w-1/5 relative flex items-center justify-center">
         <Image
