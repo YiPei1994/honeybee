@@ -21,69 +21,57 @@ function Navbar() {
             onClick={() => toggleDisplayNavbar()}
             className="hover:text-primary focus:text-primary"
           >
-            <Link href="#hero" scroll={false}>
-              Home
-            </Link>
+            <Link href="#hero">Home</Link>
           </li>
           <li
             onClick={() => toggleDisplayNavbar()}
             className="hover:text-primary focus:text-primary"
           >
-            <Link href="#about" scroll={false}>
-              About
-            </Link>
+            <Link href="#about">About</Link>
           </li>
           <li
             onClick={() => toggleDisplayNavbar()}
             className="hover:text-primary focus:text-primary"
           >
-            <Link href="#products" scroll={false}>
-              Products
-            </Link>
+            <Link href="#products">Products</Link>
           </li>
           <li
             onClick={() => toggleDisplayNavbar()}
             className="hover:text-primary focus:text-primary"
           >
-            <Link href="#blog" scroll={false}>
-              Blog
-            </Link>
+            <Link href="#blog">Blog</Link>
           </li>
         </ul>
       </nav>
       <nav className="hidden md:block md:mr-4">
         <ul className="flex flex-row gap-4 justify-center items-center ">
-          <li onClick={() => toggleDisplayNavbar()}>
+          <li>
             <Link
-              href="#hero"
-              scroll={false}
+              href="#intro"
               className="hover:text-primary focus:text-primary"
             >
               Home
             </Link>
           </li>
-          <li onClick={() => toggleDisplayNavbar()}>
+          <li>
             <Link
               href="#about"
-              scroll={false}
               className="hover:text-primary focus:text-primary"
             >
               About
             </Link>
           </li>
-          <li onClick={() => toggleDisplayNavbar()}>
+          <li>
             <Link
               href="#products"
-              scroll={false}
               className="hover:text-primary focus:text-primary"
             >
               Products
             </Link>
           </li>
-          <li onClick={() => toggleDisplayNavbar()}>
+          <li>
             <Link
               href="#blog"
-              scroll={false}
               className="hover:text-primary focus:text-primary"
             >
               Blog

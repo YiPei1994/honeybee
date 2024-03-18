@@ -4,7 +4,7 @@ import { reviews } from "../../../utils/constants";
 import Review from "./Review";
 
 function ReviewsSlider() {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(1);
 
   useEffect(() => {
     const timer = setTimeout(() => {

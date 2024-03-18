@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      style={{ scrollBehavior: "smooth" }}
       className="scrollbar-thin  scrollbar-track-transparent scrollbar-thumb-active"
     >
       <body className=" min-h-screen ">{children}</body>

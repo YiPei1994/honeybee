@@ -52,19 +52,19 @@ export const newsArray = [
 export const navItems = [
   {
     name: "Home",
-    link: "/",
+    link: "#intro",
   },
   {
     name: "About",
-    link: "/about",
+    link: "#about",
   },
   {
     name: "Products",
-    link: "/products",
+    link: "#products",
   },
   {
     name: "Blogs",
-    link: "/blog",
+    link: "#blog",
   },
 ];
 
@@ -119,5 +119,73 @@ export const reviews = [
     comment:
       "We've tried many honeys, but this one is a family favorite! Not only does it taste amazing, but it's also comforting to know it's pure and natural. My little one loves it drizzled over yogurt, and I appreciate its versatility for both sweetening and cooking.",
     name: "Sophie & Emma",
+  },
+];
+
+export const gallery = [
+  {
+    id: 1,
+    imageUrl: "/gallery1.png",
+    alt: "gallery image",
+  },
+  {
+    id: 2,
+    imageUrl: "/gallery2.png",
+    alt: "gallery image",
+  },
+  {
+    id: 3,
+    imageUrl: "/gallery3.png",
+    alt: "gallery image",
+  },
+  {
+    id: 4,
+    imageUrl: "/gallery4.png",
+    alt: "gallery image",
+  },
+  {
+    id: 5,
+    imageUrl: "/gallery5.png",
+    alt: "gallery image",
+  },
+  {
+    id: 6,
+    imageUrl: "/gallery6.png",
+    alt: "gallery image",
+  },
+];
+
+export const honeyType = [
+  {
+    id: 1,
+    imageUrl: "/type1.png",
+    alt: "honey type",
+    name: "forest honey",
+    description:
+      "Rich, dark honey harvested from the depths of the forest, boasting complex flavors with hints of woodland flora.",
+  },
+  {
+    id: 2,
+    imageUrl: "/type2.png",
+    alt: "honey type",
+    name: "creamed honey",
+    description:
+      "Smooth and velvety, creamed honey is delicately whipped to perfection, offering a spreadable consistency with a luxurious texture.",
+  },
+  {
+    id: 3,
+    imageUrl: "/type3.png",
+    alt: "honey type",
+    name: "meadow honey",
+    description:
+      "Light and floral, meadow honey captures the essence of sun-kissed wildflowers, delivering a delicate sweetness with subtle herbal undertones.",
+  },
+  {
+    id: 4,
+    imageUrl: "/type4.png",
+    alt: "honey type",
+    name: "liquid honey",
+    description:
+      "Pure and golden, liquid honey flows effortlessly, offering a classic sweetness perfect for drizzling over your favorite foods or stirring into beverages.",
   },
 ];

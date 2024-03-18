@@ -6,11 +6,13 @@ import ProductSlider from "./ProductSlider";
 function Products() {
   const bgImage = "bgOne.png";
   return (
-    <BackgroundWrapper bgImage={bgImage}>
+    <BackgroundWrapper id="products" bgImage={bgImage}>
       <Section>
         <div className="flex flex-col justify-center items-start md:items-center gap-4 xl:items-center py-4 md:py-6 lg:py-8">
-          <header className="flex flex-col justify-center items-center gap-4 md:w-2/3 text-center">
-            <h2>Our Products</h2>
+          <header className="flex flex-col justify-center items-center gap-4 md:w-2/3 text-center my-4 lg:my-8">
+            <h2>
+              Our <br /> Products
+            </h2>
             <p>
               {" "}
               Check out our online shop for cute bee-themed apparel, unique bee

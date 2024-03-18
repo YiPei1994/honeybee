@@ -20,3 +20,11 @@ export type Review = {
   comment: string;
   name: string;
 };
+
+export type Honey = {
+  id: number;
+  imageUrl: string;
+  alt: string;
+  name: string;
+  description: string;
+};

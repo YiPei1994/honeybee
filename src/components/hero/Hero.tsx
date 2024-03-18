@@ -8,6 +8,7 @@ function Hero() {
   const bgImage = "hero_bg.png";
   return (
     <BackgroundWrapper
+      id="intro"
       className="min-h-[50vh] md:min-h-[50vh]"
       bgImage={bgImage}
     >

@@ -31,6 +31,7 @@ h4 {
   color: var(--accent-head);
   font-family: var(--header);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 @layer utilities {

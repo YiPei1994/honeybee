@@ -3,14 +3,16 @@ import { cn } from "../../../utils/cn";
 
 type BackgroundWrapperProps = {
   children: ReactNode;
-  bgImage: string;
+  bgImage?: string;
   className?: string;
+  id: "intro" | "about" | "products" | "blog" | "reviews" | "gallery";
 };
 
 function BackgroundWrapper({
   children,
   className,
   bgImage,
+  id,
 }: BackgroundWrapperProps) {
   return (
     <div
@@ -19,6 +21,7 @@ function BackgroundWrapper({
         "w-full min-h-screen md:min-h-screen lg:min-h-screen xl:min-h-screen  bg-scroll flex bg-center",
         className
       )}
+      id={id}
     >
       {children}
     </div>
