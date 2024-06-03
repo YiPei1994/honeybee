@@ -2,6 +2,7 @@ import React from "react";
 import { ProductType } from "../../../utils/type";
 import Image from "next/image";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 type ProductProps = {
   product: ProductType;
@@ -27,7 +28,9 @@ function Product({ product, activeSlide }: ProductProps) {
         <h2 className="uppercase">{product.name} </h2>
         <h4 className="text-primary">{product.price} Kc </h4>
         <span>{product.description} </span>
-        <Button>Order</Button>
+        <Button>
+          <Link href="mailto:studenypz@gmail.com">Order</Link>
+        </Button>
       </div>
     </div>
   );

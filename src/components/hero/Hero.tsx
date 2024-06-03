@@ -3,6 +3,7 @@ import Section from "../ui/Section";
 import Image from "next/image";
 import Button from "../ui/Button";
 import BackgroundWrapper from "../ui/BackgroundWrapper";
+import Link from "next/link";
 
 function Hero() {
   const bgImage = "hero_bg.png";
@@ -22,7 +23,9 @@ function Hero() {
             Honey, a gift from nature, delights the senses with its unparalleled
             sweetness and timeless allure.
           </span>
-          <Button className="my-2">View More</Button>
+          <Button className="my-2">
+            <Link href="#about">View More</Link>
+          </Button>
         </div>
         <div className="w-2/5 md:w-max">
           <Image
